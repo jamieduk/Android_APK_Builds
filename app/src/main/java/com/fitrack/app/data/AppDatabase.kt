@@ -62,7 +62,7 @@ interface BodyMeasurementDao {
         WeightLog::class,
         BodyMeasurement::class
     ], 
-    version = 2, 
+    version = 1, 
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
