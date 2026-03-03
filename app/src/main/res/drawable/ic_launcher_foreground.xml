@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M54,54m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0" />
+    
+    <!-- Dumbbell icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,46 L30,62 M78,46 L78,62 M30,54 L78,54 M26,46 C23.8,46 22,47.8 22,50 L22,58 C22,60.2 23.8,62 26,62 L34,62 C36.2,62 38,60.2 38,58 L38,50 C38,47.8 36.2,46 34,46 L26,46 Z M70,46 C67.8,46 66,47.8 66,50 L66,58 C66,60.2 67.8,62 70,62 L78,62 C80.2,62 82,60.2 82,58 L82,50 C82,47.8 80.2,46 78,46 L70,46 Z"
+        android:strokeWidth="1"
+        android:strokeColor="#FFFFFF" />
+</vector>
