@@ -4,10 +4,28 @@
 
 ## 🎯 Features
 
+### 👤 User Profile & Bio
+- Complete profile setup (name, DOB, gender, height, weight)
+- Activity level & fitness goals
+- Target weight tracking
+- **BMI auto-calculation** from your stats
+- Monthly weight logging for progress tracking
+
+### 📊 Health Metrics & Calculators
+- **BMI Calculator** - Body Mass Index with category & personalized advice
+- **BMR Calculator** - Basal Metabolic Rate (Mifflin-St Jeor equation)
+- **TDEE Calculator** - Total Daily Energy Expenditure
+- **Body Fat Estimator** - Estimate body fat % from BMI
+- **Target Heart Rate Zones** - Optimize your cardio workouts
+- **Daily Calorie Recommendations** - Personalized for your goals
+- **Water Intake Calculator** - Stay properly hydrated
+- **Ideal Weight Range** - Healthy weight for your height
+
 ### 💪 Fitness Tracking
 - Log workouts with name, duration, and calories burned
 - Track daily workout count
-- View workout history
+- Weight logging with history
+- View workout trends
 - Quick fitness tips
 
 ### 🍎 Nutrition & Calorie Estimation
@@ -15,6 +33,7 @@
 - Track macronutrients (protein, carbs, fat)
 - Log meals automatically
 - Daily calorie counter
+- Personalized macro recommendations
 - Nutrition tips
 
 ### 📱 App Architecture
@@ -138,10 +157,11 @@ Future implementation options:
 
 - **Language:** Kotlin
 - **Architecture:** MVVM
-- **Database:** Room (SQLite)
+- **Database:** Room (SQLite) - 5 tables
 - **Async:** Kotlin Coroutines + Flow
 - **HTTP:** Retrofit 2
 - **UI:** Material Design Components
+- **Health Calculators:** BMI, BMR, TDEE, Body Fat, Heart Rate
 - **Min SDK:** 24 (Android 7.0)
 - **Target SDK:** 34 (Android 14)
 
@@ -149,24 +169,44 @@ Future implementation options:
 
 ## 📱 How to Use
 
-### 1. Track a Workout
-1. Go to **Fitness** tab
-2. Enter workout name (e.g., "Morning Run")
-3. Enter duration in minutes
-4. Enter estimated calories burned
-5. Tap **Log Workout**
+### 1. Set Up Your Profile 👤
+1. Go to **Profile** tab
+2. Enter your details:
+   - Name, Date of Birth, Gender
+   - Height (cm) and Weight (kg)
+   - Activity level
+   - Fitness goal (lose/maintain/gain)
+   - Target weight
+3. Tap **Save Profile**
+4. Your **BMI** is automatically calculated!
 
-### 2. Estimate Food Calories
+### 2. Use Health Calculators 🧮
+1. Go to **Tools/Calculators** tab
+2. Choose a calculator:
+   - **BMI Calculator**: Enter height & weight
+   - **Daily Calorie Needs**: Enter age, gender, activity, goal
+   - **Body Fat Estimator**: Enter your BMI & age
+   - **Heart Rate Zones**: Automatic based on your age
+3. Tap **Calculate** to see detailed results with advice
+
+### 3. Track a Workout 💪
+1. Go to **Fitness** tab
+2. Enter workout name, duration, calories burned
+3. Tap **Log Workout**
+4. Log your weight monthly to track progress
+
+### 4. Estimate Food Calories 🍎
 1. Go to **Nutrition** tab
-2. Enter food name or description (e.g., "burger", "salad", "pizza")
+2. Enter food name (e.g., "burger", "pizza", "salad")
 3. Tap **Analyze**
-4. View estimated calories and macros
+4. View calories, protein, carbs, fat
 5. Tap **Log This Meal** to save
 
-### 3. View Daily Stats
-- Top cards show:
-  - Number of workouts today
-  - Total calories consumed today
+### 5. View Daily Stats
+- Top dashboard shows:
+  - Workouts completed today
+  - Total calories consumed
+  - Latest logged weight
 
 ---
 
