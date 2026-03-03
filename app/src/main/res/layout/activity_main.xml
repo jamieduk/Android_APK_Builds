@@ -10,10 +10,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:background="#4CAF50"
+        android:orientation="vertical"
         android:padding="16dp">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,23 +20,21 @@
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:textStyle="bold" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your Complete Health &amp; Fitness Companion"
+            android:text="Your Health &amp; Fitness Companion"
             android:textColor="#FFFFFF"
             android:textSize="12sp"
             android:layout_marginTop="4dp" />
     </LinearLayout>
 
-    <!-- Today's Summary Cards -->
+    <!-- Dashboard -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="16dp">
-
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -45,146 +42,128 @@
             android:layout_marginEnd="8dp"
             card_view:cardCornerRadius="8dp"
             card_view:cardElevation="4dp">
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
-
+                android:padding="16dp"
+                android:gravity="center">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Workouts"
                     android:textSize="12sp"
                     android:textColor="#666666" />
-
                 <TextView
                     android:id="@+id/tvWorkoutsToday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
-                    android:textSize="28sp"
+                    android:textSize="24sp"
                     android:textStyle="bold"
                     android:textColor="#4CAF50"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="4dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginStart="8dp"
+            android:layout_marginHorizontal="4dp"
             card_view:cardCornerRadius="8dp"
             card_view:cardElevation="4dp">
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
-
+                android:padding="16dp"
+                android:gravity="center">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Calories"
                     android:textSize="12sp"
                     android:textColor="#666666" />
-
                 <TextView
                     android:id="@+id/tvCaloriesToday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
-                    android:textSize="28sp"
+                    android:textSize="24sp"
                     android:textStyle="bold"
                     android:textColor="#FF5722"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="4dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="4dp"
             card_view:cardCornerRadius="8dp"
             card_view:cardElevation="4dp">
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
-
+                android:padding="16dp"
+                android:gravity="center">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Weight"
                     android:textSize="12sp"
                     android:textColor="#666666" />
-
                 <TextView
                     android:id="@+id/tvLatestWeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="--"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="#2196F3"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="4dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 
-    <!-- Tab Navigation -->
+    <!-- Tabs -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="8dp">
-
         <Button
             android:id="@+id/tabFitness"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="💪 Fitness"
-            android:backgroundTint="#4CAF50"
+            android:text="💪"
             android:layout_marginEnd="4dp" />
-
         <Button
             android:id="@+id/tabProfile"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="👤 Profile"
-            android:backgroundTint="#2196F3"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp" />
-
+            android:text="👤"
+            android:layout_marginHorizontal="4dp" />
         <Button
             android:id="@+id/tabCalculators"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="🧮 Tools"
-            android:backgroundTint="#9C27B0"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp" />
-
+            android:text="🧮"
+            android:layout_marginHorizontal="4dp" />
         <Button
             android:id="@+id/tabNutrition"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="🍎 Nutrition"
-            android:backgroundTint="#FF5722"
+            android:text="🍎"
             android:layout_marginStart="4dp" />
     </LinearLayout>
 
-    <!-- Fitness Section -->
+    <!-- Content -->
     <ScrollView
         android:id="@+id/sectionFitness"
         android:layout_width="match_parent"
@@ -197,18 +176,17 @@
             android:orientation="vertical"
             android:padding="16dp">
 
+            <!-- Workout Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 card_view:cardCornerRadius="8dp"
                 card_view:cardElevation="4dp">
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="16dp">
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -216,47 +194,40 @@
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="#4CAF50" />
-
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="12dp"
                         android:hint="Workout Name">
-
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/editWorkoutName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="text" />
                     </com.google.android.material.textfield.TextInputLayout>
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_marginTop="12dp">
-
+                        android:layout_marginTop="8dp">
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:layout_marginEnd="8dp"
                             android:hint="Duration (min)">
-
                             <com.google.android.material.textfield.TextInputEditText
                                 android:id="@+id/editDuration"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="number" />
                         </com.google.android.material.textfield.TextInputLayout>
-
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:layout_marginStart="8dp"
-                            android:hint="Calories Burned">
-
+                            android:hint="Calories">
                             <com.google.android.material.textfield.TextInputEditText
                                 android:id="@+id/editWorkoutCalories"
                                 android:layout_width="match_parent"
@@ -264,31 +235,28 @@
                                 android:inputType="number" />
                         </com.google.android.material.textfield.TextInputLayout>
                     </LinearLayout>
-
                     <Button
                         android:id="@+id/btnLogWorkout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:text="Log Workout 🏋️"
+                        android:layout_marginTop="12dp"
+                        android:text="Log Workout"
                         android:backgroundTint="#4CAF50" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Weight Logging -->
+            <!-- Weight Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 card_view:cardCornerRadius="8dp"
                 card_view:cardElevation="4dp">
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:padding="16dp">
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -296,648 +264,368 @@
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="#2196F3" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Track your weight monthly for progress monitoring"
-                        android:textSize="14sp"
-                        android:textColor="#666666" />
-
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginTop="8dp"
                         android:hint="Weight (kg)">
-
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/editCurrentWeight"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="numberDecimal" />
                     </com.google.android.material.textfield.TextInputLayout>
-
                     <Button
                         android:id="@+id/btnLogWeight"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Log Weight 📊"
+                        android:layout_marginTop="8dp"
+                        android:text="Log Weight"
                         android:backgroundTint="#2196F3" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Workout Tips -->
-            <androidx.cardview.widget.CardView
+            <!-- Profile Section (hidden by default) -->
+            <LinearLayout
+                android:id="@+id/sectionProfile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                card_view:cardCornerRadius="8dp"
-                card_view:cardElevation="4dp">
+                android:orientation="vertical"
+                android:visibility="gone">
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="💡 Fitness Tips"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="#333333" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="• Aim for 150+ min moderate exercise/week\n• Include strength training 2-3x/week\n• Rest days are crucial for recovery\n• Track progress, not just weight\n• Stay consistent over perfection"
-                        android:textSize="14sp"
-                        android:textColor="#666666"
-                        android:lineSpacingExtra="4dp" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-    </ScrollView>
-
-    <!-- Profile Section -->
-    <ScrollView
-        android:id="@+id/sectionProfile"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                card_view:cardCornerRadius="8dp"
-                card_view:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="👤 Your Profile"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="#2196F3" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Enter your details for personalized insights"
-                        android:textSize="14sp"
-                        android:textColor="#666666" />
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:hint="Name">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/editName"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="textPersonName" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:hint="Date of Birth (YYYY-MM-DD)">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/editDateOfBirth"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="date"
-                            android:clickable="true"
-                            android:focusable="false" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <Spinner
-                        android:id="@+id/spinnerGender"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:entries="@array/gender_array"
-                        android:background="@android:drawable/btn_dropdown" />
-
+                    android:layout_marginTop="16dp"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="4dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="12dp">
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginEnd="8dp"
-                            android:hint="Height (cm)">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/editHeight"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:inputType="numberDecimal" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
+                            android:text="👤 Profile"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#2196F3" />
                         <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginStart="8dp"
-                            android:hint="Weight (kg)">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/editWeight"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:inputType="numberDecimal" />
-                        </com.google.android.material.textfield.TextInputLayout>
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Activity Level"
-                        android:textSize="14sp"
-                        android:textColor="#333333" />
-
-                    <Spinner
-                        android:id="@+id/spinnerActivity"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:entries="@array/activity_array"
-                        android:background="@android:drawable/btn_dropdown" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Fitness Goal"
-                        android:textSize="14sp"
-                        android:textColor="#333333" />
-
-                    <Spinner
-                        android:id="@+id/spinnerGoal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:entries="@array/goal_array"
-                        android:background="@android:drawable/btn_dropdown" />
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:hint="Target Weight (kg)">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/editTargetWeight"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="numberDecimal" />
-                    </com.google.android.material.textfield.TextInputLayout>
+                            android:layout_marginTop="8dp"
+                            android:hint="Name">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="Date of Birth">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editDateOfBirth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="date"
+                                android:clickable="true"
+                                android:focusable="false" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="8dp">
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginEnd="8dp"
+                                android:hint="Height (cm)">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editHeight"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:hint="Weight (kg)">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editWeight"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                        <Spinner
+                            android:id="@+id/spinnerGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/gender_array"
+                            android:background="@android:drawable/btn_dropdown" />
+                        <Spinner
+                            android:id="@+id/spinnerActivity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/activity_array"
+                            android:background="@android:drawable/btn_dropdown" />
+                        <Spinner
+                            android:id="@+id/spinnerGoal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/goal_array"
+                            android:background="@android:drawable/btn_dropdown" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="Target Weight (kg)">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTargetWeight"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <Button
+                            android:id="@+id/btnSaveProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Save Profile"
+                            android:backgroundTint="#2196F3" />
+                        <TextView
+                            android:id="@+id/tvBmiDisplay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:textSize="16sp"
+                            android:textColor="#2196F3" />
+                        <TextView
+                            android:id="@+id/tvBmiCategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:textColor="#666666" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
-                    <Button
-                        android:id="@+id/btnSaveProfile"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:text="Save Profile 💾"
-                        android:backgroundTint="#2196F3" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- BMI Display -->
-            <androidx.cardview.widget.CardView
+            <!-- Calculators Section -->
+            <LinearLayout
+                android:id="@+id/sectionCalculators"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                card_view:cardCornerRadius="8dp"
-                card_view:cardElevation="4dp">
+                android:orientation="vertical"
+                android:visibility="gone">
 
-                <LinearLayout
+                <!-- BMI Calculator -->
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="📊 Your BMI Status"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="#333333" />
-
-                    <TextView
-                        android:id="@+id/tvBmiDisplay"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Your BMI: --"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:textColor="#2196F3" />
-
-                    <TextView
-                        android:id="@+id/tvBmiCategory"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Enter your profile to see BMI"
-                        android:textSize="14sp"
-                        android:textColor="#666666" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-    </ScrollView>
-
-    <!-- Calculators Section -->
-    <ScrollView
-        android:id="@+id/sectionCalculators"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <!-- BMI Calculator -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                card_view:cardCornerRadius="8dp"
-                card_view:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="📊 BMI Calculator"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="#9C27B0" />
-
+                    android:layout_marginTop="16dp"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="4dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="12dp">
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginEnd="8dp"
-                            android:hint="Height (cm)">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/editCalcHeight"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:inputType="numberDecimal" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="0dp"
+                            android:text="📊 BMI Calculator"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#9C27B0" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_marginStart="8dp"
-                            android:hint="Weight (kg)">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/editCalcWeight"
-                                android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="8dp">
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:inputType="numberDecimal" />
-                        </com.google.android.material.textfield.TextInputLayout>
+                                android:layout_weight="1"
+                                android:layout_marginEnd="8dp"
+                                android:hint="Height (cm)">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editCalcHeight"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:hint="Weight (kg)">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editCalcWeight"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="numberDecimal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                        <Button
+                            android:id="@+id/btnCalculateBMI"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Calculate BMI"
+                            android:backgroundTint="#9C27B0" />
+                        <TextView
+                            android:id="@+id/tvBmiResult"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="14sp"
+                            android:textColor="#333333" />
                     </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <Button
-                        android:id="@+id/btnCalculateBMI"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Calculate BMI 📊"
-                        android:backgroundTint="#9C27B0" />
-
-                    <TextView
-                        android:id="@+id/tvBmiResult"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:textSize="14sp"
-                        android:textColor="#333333" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- Daily Calorie Needs -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                card_view:cardCornerRadius="8dp"
-                card_view:cardElevation="4dp">
-
-                <LinearLayout
+                <!-- Calorie Calculator -->
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="🔥 Daily Calorie Needs"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="#FF9800" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Calculate BMR, TDEE &amp; personalized calorie goals"
-                        android:textSize="14sp"
-                        android:textColor="#666666" />
-
-                    <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="16dp"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="4dp">
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:hint="Age">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/editCalcAge"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🔥 Daily Calories"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#FF9800" />
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="number" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <Spinner
-                        android:id="@+id/spinnerCalcGender"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:entries="@array/gender_array"
-                        android:background="@android:drawable/btn_dropdown" />
-
-                    <Spinner
-                        android:id="@+id/spinnerCalcActivity"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:entries="@array/activity_array"
-                        android:background="@android:drawable/btn_dropdown" />
-
-                    <Spinner
-                        android:id="@+id/spinnerCalcGoal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:entries="@array/goal_array"
-                        android:background="@android:drawable/btn_dropdown" />
-
-                    <Button
-                        android:id="@+id/btnCalculateDailyNeeds"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Calculate Daily Needs 🔥"
-                        android:backgroundTint="#FF9800" />
-
-                    <TextView
-                        android:id="@+id/tvDailyNeedsResult"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:textSize="14sp"
-                        android:textColor="#333333" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- Body Fat Estimator -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                card_view:cardCornerRadius="8dp"
-                card_view:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="📈 Body Fat Estimator"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="#E91E63" />
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:hint="Your BMI">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/editCalcBmi"
+                            android:layout_marginTop="8dp"
+                            android:hint="Age">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editCalcAge"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <Spinner
+                            android:id="@+id/spinnerCalcGender"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="numberDecimal" />
-                    </com.google.android.material.textfield.TextInputLayout>
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/gender_array"
+                            android:background="@android:drawable/btn_dropdown" />
+                        <Spinner
+                            android:id="@+id/spinnerCalcActivity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/activity_array"
+                            android:background="@android:drawable/btn_dropdown" />
+                        <Spinner
+                            android:id="@+id/spinnerCalcGoal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/goal_array"
+                            android:background="@android:drawable/btn_dropdown" />
+                        <Button
+                            android:id="@+id/btnCalculateDailyNeeds"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Calculate"
+                            android:backgroundTint="#FF9800" />
+                        <TextView
+                            android:id="@+id/tvDailyNeedsResult"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="14sp"
+                            android:textColor="#333333" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
-                    <Spinner
-                        android:id="@+id/spinnerCalcGender2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:entries="@array/gender_array"
-                        android:background="@android:drawable/btn_dropdown"
-                        android:visibility="gone" />
-
-                    <Button
-                        android:id="@+id/btnCalculateBodyFat"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Estimate Body Fat 📈"
-                        android:backgroundTint="#E91E63" />
-
-                    <TextView
-                        android:id="@+id/tvBodyFatResult"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:textSize="14sp"
-                        android:textColor="#333333" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- Heart Rate Zones -->
-            <androidx.cardview.widget.CardView
+            <!-- Nutrition Section -->
+            <LinearLayout
+                android:id="@+id/sectionNutrition"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                card_view:cardCornerRadius="8dp"
-                card_view:cardElevation="4dp">
+                android:orientation="vertical"
+                android:visibility="gone">
 
-                <LinearLayout
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="❤️ Target Heart Rate Zones"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="#F44336" />
-
-                    <Button
-                        android:id="@+id/btnCalculateHeartRate"
+                    android:layout_marginTop="16dp"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="4dp">
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Calculate Heart Rate Zones ❤️"
-                        android:backgroundTint="#F44336" />
-
-                    <TextView
-                        android:id="@+id/tvHeartRateResult"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:textSize="14sp"
-                        android:textColor="#333333" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                        android:orientation="vertical"
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🍎 Food Calculator"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="#FF5722" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:hint="Food name">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editFoodDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <Button
+                            android:id="@+id/btnAnalyzeFood"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Analyze"
+                            android:backgroundTint="#FF5722" />
+                        <TextView
+                            android:id="@+id/tvNutritionResult"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16sp"
+                            android:textColor="#333333" />
+                        <Button
+                            android:id="@+id/btnLogFood"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Log Food"
+                            android:backgroundTint="#FF5722" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
-    <!-- Nutrition Section -->
-    <ScrollView
-        android:id="@+id/sectionNutrition"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                card_view:cardCornerRadius="8dp"
-                card_view:cardElevation="4dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="📸 Food Calorie Estimator"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="#FF5722" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Describe your food to estimate calories"
-                        android:textSize="14sp"
-                        android:textColor="#666666" />
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:hint="Food name or description">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/editFoodDescription"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="text" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <Button
-                        android:id="@+id/btnTakePhoto"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="📷 Take Photo (Coming Soon)"
-                        android:backgroundTint="#FF9800" />
-
-                    <Button
-                        android:id="@+id/btnAnalyzeFood"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Analyze 🔍"
-                        android:backgroundTint="#FF5722" />
-
-                    <TextView
-                        android:id="@+id/tvNutritionResult"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:textSize="16sp"
-                        android:textColor="#333333"
-                        android:visibility="visible" />
-
-                    <Button
-                        android:id="@+id/btnLogFood"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Log This Meal 📝"
-                        android:backgroundTint="#FF5722" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-    </ScrollView>
-
 </LinearLayout>
