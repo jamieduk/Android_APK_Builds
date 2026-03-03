@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your Complete Health & Fitness Companion"
+            android:text="Your Complete Health &amp; Fitness Companion"
             android:textColor="#FFFFFF"
             android:textSize="12sp"
             android:layout_marginTop="4dp" />
@@ -685,7 +685,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Calculate BMR, TDEE & personalized calorie goals"
+                        android:text="Calculate BMR, TDEE &amp; personalized calorie goals"
                         android:textSize="14sp"
                         android:textColor="#666666" />
 
