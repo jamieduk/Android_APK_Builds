@@ -1,0 +1,20 @@
+{
+    "java.home": "/usr/lib/jvm/java-17-openjdk-arm64",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.import.gradle.enabled": true,
+    "java.import.gradle.wrapper.enabled": true,
+    "android.sdk.home": "/home/jay/Android/Sdk",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[kotlin]": {
+        "editor.defaultFormatter": "vscjava.vscode-java-pack"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.gradle": true,
+        "**/build": true,
+        "**/*.class": true
+    },
+    "java.codeGeneration.hashCodeEquals.useJava7Objects": true,
+    "java.codeGeneration.toString.useJava7Objects": true
+}

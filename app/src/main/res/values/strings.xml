@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FiTrack</string>
+    <string name="fitness">Fitness</string>
+    <string name="nutrition">Nutrition</string>
+    <string name="log_workout">Log Workout</string>
+    <string name="analyze_food">Analyze Food</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="log_food">Log Food</string>
+</resources>
