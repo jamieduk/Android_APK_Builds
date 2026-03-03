@@ -74,22 +74,22 @@ data class FoodItem(
 // Mock response generator for demo without API key
 object MockNutritionService {
     private val foodDatabase = mapOf(
-        "burger" to NutritionData(350, 20, 35, 17),
-        "pizza" to NutritionData(285, 12, 36, 10),
-        "salad" to NutritionData(150, 5, 12, 8),
-        "chicken" to NutritionData(165, 31, 0, 3.6),
-        "rice" to NutritionData(206, 4.3, 45, 0.4),
-        "pasta" to NutritionData(220, 8, 43, 1.3),
-        "apple" to NutritionData(95, 0.5, 25, 0.3),
-        "banana" to NutritionData(105, 1.3, 27, 0.3),
-        "egg" to NutritionData(78, 6, 0.6, 0.6),
-        "bread" to NutritionData(265, 9, 49, 3.2),
-        "milk" to NutritionData(42, 3.4, 5, 1),
-        "coffee" to NutritionData(2, 0.3, 0, 0),
-        "water" to NutritionData(0, 0, 0, 0),
-        "ice cream" to NutritionData(207, 3.5, 24, 11),
-        "chocolate" to NutritionData(546, 4.9, 59, 31),
-        "fries" to NutritionData(312, 3.4, 41, 15)
+        "burger" to NutritionData(350, 20f, 35f, 17f),
+        "pizza" to NutritionData(285, 12f, 36f, 10f),
+        "salad" to NutritionData(150, 5f, 12f, 8f),
+        "chicken" to NutritionData(165, 31f, 0f, 3.6f),
+        "rice" to NutritionData(206, 4.3f, 45f, 0.4f),
+        "pasta" to NutritionData(220, 8f, 43f, 1.3f),
+        "apple" to NutritionData(95, 0.5f, 25f, 0.3f),
+        "banana" to NutritionData(105, 1.3f, 27f, 0.3f),
+        "egg" to NutritionData(78, 6f, 0.6f, 0.6f),
+        "bread" to NutritionData(265, 9f, 49f, 3.2f),
+        "milk" to NutritionData(42, 3.4f, 5f, 1f),
+        "coffee" to NutritionData(2, 0.3f, 0f, 0f),
+        "water" to NutritionData(0, 0f, 0f, 0f),
+        "ice cream" to NutritionData(207, 3.5f, 24f, 11f),
+        "chocolate" to NutritionData(546, 4.9f, 59f, 31f),
+        "fries" to NutritionData(312, 3.4f, 41f, 15f)
     )
     
     fun estimateCalories(foodDescription: String): NutritionData {
